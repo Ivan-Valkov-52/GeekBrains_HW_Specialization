@@ -11,7 +11,20 @@
     return newLenghtArray;
 }
 
-
+string[] GetArray(string[] array)
+{
+    int index = 0;
+    string[] newArray = new string[GiveLenghtNewArray(array)];
+    foreach (string el in array)
+    {
+        if (el.Length <= 3)
+        {
+            newArray[index] = el;
+            index++;
+        }
+    }
+    return newArray;
+}
 
 Console.WriteLine("Заданный массив: ");
 string[] array = { "12", "l o", "maqni", ":-)", "321k", "шлё", "dkwe" };
