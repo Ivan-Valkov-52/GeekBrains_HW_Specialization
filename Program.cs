@@ -29,3 +29,6 @@ string[] GetArray(string[] array)
 Console.WriteLine("Заданный массив: ");
 string[] array = { "12", "l o", "maqni", ":-)", "321k", "шлё", "dkwe" };
 Console.WriteLine("[" + string.Join(", ", array) + "]");
+string[] newArray = GetArray(array);
+Console.WriteLine("Новый массив: ");
+Console.WriteLine("[" + string.Join(", ", newArray) + "]");
